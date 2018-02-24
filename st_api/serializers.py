@@ -17,7 +17,7 @@ class FeedListSerializer(serializers.ModelSerializer):
 	 )
 	class Meta:
 			model = Feed
-			fields = ('id', 'created', 'category','title', 'detail', 'publish_date', 'body', 'url','label', 'rated_editors')
+			fields = ('id', 'created', 'category','title', 'detail', 'publish_date', 'body', 'url', 'rated_editors')
 			read_only_fields = ('id', 'created')
 
 	def create(self, validated_data):

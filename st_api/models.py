@@ -10,7 +10,7 @@ class Feed(models.Model):
 	body = models.TextField(blank=True)
 	url = models.CharField(max_length=500, blank=True)
 	creator = models.ForeignKey('auth.User', related_name='feeds', on_delete=models.CASCADE) #user who inserted the feed
-	label = models.CharField(max_length=10,blank=True)
+	#label = models.CharField(max_length=10,blank=True)
 
 	class Meta:
 		ordering = ('created',)
